@@ -7,7 +7,7 @@ How to use:
 -----------
 
 ```html
-<select class="form-control js-hemi-custom-select2">
+<select class="js-hemi-custom-select2">
 	<option>1</option>
 	<option>2</option>
 	<option disabled="">3</option>
