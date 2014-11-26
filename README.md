@@ -7,7 +7,7 @@ How to use:
 -----------
 
 ```html
-<select class="js-hemi-custom-select2">
+<select class="js-hemi-custom-select">
 	<option>1</option>
 	<option>2</option>
 	<option disabled="">3</option>
@@ -18,7 +18,7 @@ How to use:
 
 ```script
 $(function () {
-	$(".js-hemi-custom-select1").hemiCustomSelect({
+	$(".js-hemi-custom-select").hemiCustomSelect({
 	});
 });
 ```
