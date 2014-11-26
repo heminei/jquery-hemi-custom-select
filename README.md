@@ -7,6 +7,9 @@ How to use:
 -----------
 
 ```html
+<link href="/src/jquery.hemiCustomSelect-2.4.css" rel="stylesheet" type="text/css"/>
+<script src="/src/jquery.hemiCustomSelect-2.4.js" type="text/javascript"></script>
+
 <select class="js-hemi-custom-select">
 	<option>1</option>
 	<option>2</option>
