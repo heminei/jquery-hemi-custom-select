@@ -18,8 +18,7 @@ How to use:
 
 ```javascript
 $(function () {
-	$(".js-hemi-custom-select").hemiCustomSelect({
-	});
+	$(".js-hemi-custom-select").hemiCustomSelect();
 });
 ```
 
