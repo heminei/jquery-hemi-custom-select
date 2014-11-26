@@ -16,7 +16,7 @@ How to use:
 </select>
 ```
 
-```script
+```javascript
 $(function () {
 	$(".js-hemi-custom-select").hemiCustomSelect({
 	});
@@ -25,7 +25,7 @@ $(function () {
 
 Options:
 -----------
-```script
+```javascript
 $(function () {
 	$(".js-hemi-custom-select").hemiCustomSelect({
 		wrapper: {
