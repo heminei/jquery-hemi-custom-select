@@ -27,7 +27,7 @@ Options:
 -----------
 ```script
 $(function () {
-	$(".js-hemi-custom-select1").hemiCustomSelect({
+	$(".js-hemi-custom-select").hemiCustomSelect({
 		wrapper: {
 			'class': "hcs-select-wrapper",
 			'element': $("<div/>")
