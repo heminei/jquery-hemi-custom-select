@@ -22,3 +22,67 @@ $(function () {
 	});
 });
 ```
+
+Options:
+-----------
+```script
+$(function () {
+	$(".js-hemi-custom-select1").hemiCustomSelect({
+		wrapper: {
+			'class': "hcs-select-wrapper",
+			'element': $("<div/>")
+		},
+		select: {
+			'class': ""
+		},
+		title: {
+			'class': "hcs-select-title",
+			'element': $("<span/>")
+		},
+		arrow: {
+			'class': "hcs-select-arrow",
+			'element': $("<span/>")
+		},
+		responsive: true,
+		dropdown: {
+			enable: false,
+			element: $("<div/>"),
+			'class': "hcs-dropdown",
+			'classOpen': "hcs-dropdown-open",
+			option: {
+				element: $("<div/>"),
+				'class': "hcs-dropdown-option",
+				'classSelected': "selected",
+				'classDisabled': "disabled"
+			},
+			optgroup: {
+				element: $("<div/>"),
+				'class': "hcs-dropdown-optgroup",
+				'classDisabled': "disabled",
+				'label': {
+					element: $("<div/>"),
+					'class': "hcs-dropdown-optgroup-label"
+				}
+			}
+		},
+		init: function (element) {
+
+		},
+		onLoad: function (element) {
+
+		},
+		onChange: function (element) {
+
+		},
+		onClick: function (element) {
+
+		},
+		onRefresh: function (element) {
+
+		},
+		onResize: function (element) {
+
+		}
+	});
+});
+```
