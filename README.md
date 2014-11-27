@@ -3,6 +3,11 @@ jquery-hemi-custom-select
 
 jQuery custom select plugin. Custom responsive design.
 
+Demo:
+-----------
+
+http://heminei.github.io/jquery-hemi-custom-select/demo/
+
 How to use:
 -----------
 
