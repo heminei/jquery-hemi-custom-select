@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Custom Select</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.css">
+		<link href="src/jquery.hemiCustomSelect-2.4.css" rel="stylesheet" type="text/css"/>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.js"></script>
+		<script src="src/jquery.hemiCustomSelect-2.4.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<nav role="navigation" class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">Demo</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">jQuery Custom Select</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-6">
+							<form role="form">
+								<div class="form-group">
+									<label>Select with default dropdown:</label>
+									<select class="form-control js-hemi-custom-select1">
+										<option>1</option>
+										<option>2</option>
+										<option disabled="">3</option>
+										<option>4</option>
+										<option>5</option>
+										<optgroup label="Group 1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</optgroup>
+										<optgroup disabled="" label="Group 2 disabled">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</optgroup>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+							<script type="text/javascript">
+								//<!--
+								$(function () {
+									$(".js-hemi-custom-select1").hemiCustomSelect({
+									});
+								});
+								//-->
+							</script>
+						</div>
+						<div class="col-md-6">
+							<form role="form">
+								<div class="form-group">
+									<label>Select with custom dropdown:</label>
+									<select class="form-control js-hemi-custom-select2">
+										<option>1</option>
+										<option>2</option>
+										<option disabled="">3</option>
+										<option>4</option>
+										<option>5</option>
+										<optgroup label="Group 1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</optgroup>
+										<optgroup disabled="" label="Group 2 disabled">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</optgroup>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+
+							<script type="text/javascript">
+								//<!--
+								$(function () {
+									$(".js-hemi-custom-select2").hemiCustomSelect({
+										dropdown: {
+											enable: true
+										}
+									});
+								});
+								//-->
+							</script>
+						</div>
+						<div class="col-md-6">
+							<form role="form">
+								<div class="form-group">
+									<label>Select with bootstrap theme:</label>
+									<select class="form-control js-hemi-custom-select3">
+										<option>1</option>
+										<option>2</option>
+										<option disabled="">3</option>
+										<option>4</option>
+										<option>5</option>
+										<optgroup label="Group 1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</optgroup>
+										<optgroup disabled="" label="Group 2 disabled">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</optgroup>
+									</select>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+
+							<script type="text/javascript">
+								//<!--
+								$(function () {
+									$(".js-hemi-custom-select3").hemiCustomSelect({
+										wrapper: {
+											'class': "form-control",
+											'element': $("<div/>")
+										},
+										select: {
+											'class': ""
+										},
+										title: {
+											'class': "hcs-select-title",
+											'element': $("<span/>")
+										},
+										arrow: {
+											'class': "caret pull-right",
+											'element': $("<span/>")
+										},
+										dropdown: {
+											enable: true,
+											element: $("<div/>").css({
+												"position": "absolute",
+												"left": 0,
+												"right": 0,
+												"top": "100%",
+												"max-height": "200px"
+											}),
+											'class': "list-group",
+											'classOpen': "hcs-dropdown-open",
+											option: {
+												element: $("<a href='#'/>"),
+												'class': "list-group-item",
+												'classSelected': "active",
+												'classDisabled': "disabled"
+											},
+											optgroup: {
+												element: $("<div/>"),
+												'class': "list-group",
+												'classDisabled': "disabled",
+												'label': {
+													element: $("<div/>"),
+													'class': "hcs-dropdown-optgroup-label"
+												}
+											}
+										}
+									});
+								});
+								//-->
+							</script>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
